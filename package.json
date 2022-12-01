@@ -1,0 +1,19 @@
+{
+  "name": "resto-taketwo",
+  "version": "1.0.0",
+  "description": "the second try of the resto page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wulfiss/resto-taketwo.git"
+  },
+  "author": "Wulfis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wulfiss/resto-taketwo/issues"
+  },
+  "homepage": "https://github.com/wulfiss/resto-taketwo#readme"
+}
