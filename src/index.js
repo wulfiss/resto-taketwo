@@ -20,6 +20,10 @@
         const nav_menu = document.createElement('button');
         const nav_contact = document.createElement('button');
 
+        nav_welcome.classList.add('btnWelcome');
+        nav_menu.classList.add('btnMenu');
+        nav_contact.classList.add('btnContact');
+
         nav_welcome.textContent = 'Welcome';
         nav_menu.textContent = 'Menu';
         nav_contact.textContent = 'Contact';
