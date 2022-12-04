@@ -50,24 +50,23 @@ import contact from "./contact";
         //const content_container = document.createElement('div');
 
         main_container.appendChild(welcome());
-        
-    
-        const btn_container =  document.querySelector('button');
-
-        btn_container.addEventListener('click', (e) => {
-            if(e.target.getAttribute('class') == 'btnWelcome'){
-                main_container.appendChild(welcome());
-            }else if(e.target.getAttribute('class') == 'btnMenu'){
-                main_container.appendChild(menu());
-            }else if((e.target.getAttribute('class') == 'btnContact')){
-                main_container.appendChild(contact());
-            }
-        })
-    
         document.body.appendChild(main_container);
+    
+        let btn_container = document.querySelector('button');
 
+        btn_container.addEventListener('click', (e) => {           
+            if(e.target.getAttribute('class') == 'btnWelcome'){
+                console.log('1');
+            }else if(e.target.getAttribute('class') == 'btnMenu'){
+                console.log('menu');
+            }else if(e.target.getAttribute('class') == 'btnContact'){
+                console.log('c');
+            }
+        });
+    
     }
 
+    console.log('0');
     header();
     nav();
     main();
