@@ -1,3 +1,7 @@
+import welcome from "./welcome";
+import menu from "./menu";
+import contact from "./contact";
+
 (function unChange(){
 
     const header = () => {
@@ -35,18 +39,33 @@
         document.body.appendChild(nav_container);
     }
 
-    const main = () =>{
-        const main_container = document.createElement('main');
-        const content_container = document.createElement('div');
-
-        main_container.appendChild(content_container);
-        document.body.appendChild(main_container);
-    }
-
     const footer = () =>{
         const footer_container = document.createElement('footer');
 
         document.body.appendChild(footer_container);
+    }
+
+    const main = () =>{
+        const main_container = document.createElement('main');
+        //const content_container = document.createElement('div');
+
+        main_container.appendChild(welcome());
+        
+    
+        const btn_container =  document.querySelector('button');
+
+        btn_container.addEventListener('click', (e) => {
+            if(e.target.getAttribute('class') == 'btnWelcome'){
+                main_container.appendChild(welcome());
+            }else if(e.target.getAttribute('class') == 'btnMenu'){
+                main_container.appendChild(menu());
+            }else if((e.target.getAttribute('class') == 'btnContact')){
+                main_container.appendChild(contact());
+            }
+        })
+    
+        document.body.appendChild(main_container);
+
     }
 
     header();
