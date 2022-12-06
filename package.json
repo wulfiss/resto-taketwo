@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/wulfiss/resto-taketwo#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
