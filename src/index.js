@@ -41,12 +41,6 @@ import "./style.scss";
         document.body.appendChild(nav_container);
     }
 
-    const footer = () =>{
-        const footer_container = document.createElement('footer');
-
-        document.body.appendChild(footer_container);
-    }
-
     const main = () =>{
         const main_container = document.createElement('main');
         //const content_container = document.createElement('div');
@@ -78,6 +72,12 @@ import "./style.scss";
         });
     }
 
+    const footer = () =>{
+        const footer_container = document.createElement('footer');
+
+        document.body.appendChild(footer_container);
+    }
+    
     console.log('0');
     header();
     nav();
