@@ -48,6 +48,12 @@ import "./style.scss";
         document.body.appendChild(main_container);        
     }
 
+    const footer = () =>{
+        const footer_container = document.createElement('footer');
+
+        document.body.appendChild(footer_container);
+    }
+
     const btnNav = () =>{
         let nav_container = document.querySelector('nav');
         let main_container = document.querySelector('main');
@@ -56,28 +62,22 @@ import "./style.scss";
             if(e.target.getAttribute('class') == 'btnWelcome'){
                 main_container.removeChild(main_container.firstChild);
                 main_container.appendChild(welcome());
-                document.body.appendChild(main_container);   
+                //document.body.appendChild(main_container);   
                 console.log('1');
             }else if(e.target.getAttribute('class') == 'btnMenu'){
                 main_container.removeChild(main_container.firstChild);
                 main_container.appendChild(menu());
-                document.body.appendChild(main_container);   
+                //document.body.appendChild(main_container);   
                 console.log('menu');
             }else if(e.target.getAttribute('class') == 'btnContact'){
                 main_container.removeChild(main_container.firstChild);
                 main_container.appendChild(contact());
-                document.body.appendChild(main_container);   
+                //document.body.appendChild(main_container);   
                 console.log('c');
             }
         });
     }
-
-    const footer = () =>{
-        const footer_container = document.createElement('footer');
-
-        document.body.appendChild(footer_container);
-    }
-    
+   
     console.log('0');
     header();
     nav();
