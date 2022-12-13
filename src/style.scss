@@ -41,6 +41,20 @@ button{
     border-radius: 10px;
 }
 
+div.welcome{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+img.welcomeImg{
+    width: 300px;
+    height: 290px;
+    border-radius: 50%;
+}
+
 h2{
     height: 60px;
     font-size: 30px;
