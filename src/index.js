@@ -8,8 +8,8 @@ import "./style.scss";
 
     const header = () => {
         const header_container = document.createElement('header');
-        const header_title = document.createElement('h1');
-        const header_subtitle = document.createElement('h3');
+        const header_title = document.createElement('h2');
+        const header_subtitle = document.createElement('p');
 
         header_title.textContent = 'Don Wulfis Resto';
         header_subtitle.textContent = 'The best food of the world!!!';
