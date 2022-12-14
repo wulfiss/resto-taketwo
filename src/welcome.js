@@ -11,10 +11,10 @@ const welcome = () => {
     const welcome_div = document.createElement('div');
     const p_welcome_mgs = document.createElement('p');
     p_welcome_mgs.textContent ='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac libero semper, volutpat tortor id, aliquet lacus. Praesent elementum convallis lorem id interdum. Praesent vitae purus augue. Fusce efficitur odio sit amet est cursus, quis finibus dolor malesuada. Pellentesque id eros rhoncus ipsum laoreet dapibus sit amet sit amet neque.';
-    welcome_div.appendChild(p_welcome_mgs);
+    //welcome_div.appendChild(p_welcome_mgs);
     
     content_container.appendChild(portal_img);
-    content_container.appendChild(welcome_div);
+    content_container.appendChild(p_welcome_mgs);
 
     return content_container;
 }

@@ -1,17 +1,21 @@
-$body-color: red;
+$color-900: #ff785a;
+$color-800: #ffd25a;
+$color-700: #ffaa51;
+$text-color: #191919;
+
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     height: 100%;
-    border: 1px solid black;
 }
 
 body{
     display: grid;
     grid-template-rows: 120px 35px auto 30px;
-    color: $body-color;
+    color: $text-color;
+    background-color: $color-700;
     gap: 2px;
     justify-items: center;
 }
@@ -23,6 +27,19 @@ header{
     padding: 10px;
     justify-items: center;
     align-content: center;
+    background-color: $color-700;
+
+    h2{
+        height: 60px;
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+    p{
+        height: 30px;
+        font-size: 18px;
+        padding: 5px;
+    }
 }
 
 nav{
@@ -33,38 +50,46 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    background-color: $color-900;
+
+    button{
+        height: 27px;
+        border: none;
+        border-radius: 10px;
+    }
+
 }
 
-button{
-    height: 27px;
-    border: none;
-    border-radius: 10px;
-}
 
 div.welcome{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
     width: 100%;
     justify-items: center;
     align-items: center;
+
+
+    img.welcomeImg{
+        width: 350px;
+        height: 340px;
+        border-radius: 50%;
+    }
+
+    p{
+        text-align: center;
+        width: 70%;
+        font-size: 20px;
+    }
 }
 
-img.welcomeImg{
-    width: 300px;
-    height: 290px;
-    border-radius: 50%;
-}
 
-h2{
-    height: 60px;
-    font-size: 30px;
-    padding: 10px;
-}
-
-p{
-    height: 30px;
-    font-size: 18px;
-    padding: 5px;
+footer{
+    width: 100%;
+    background-color: $color-900;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 
@@ -86,4 +111,24 @@ div.menu{
     div.menu{
         grid-template-columns: 1fr;
     }
+
+    div.welcome{
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;   
+        justify-items: center;
+        align-items: center;
+    
+        img.welcomeImg{
+            width: 230px;
+            height: 230px;
+        }
+    
+        p{
+            text-align: center;
+            width:80%;
+            font-size: 20px;
+        }
+    }
+
+
 }

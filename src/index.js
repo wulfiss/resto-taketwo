@@ -50,7 +50,6 @@ import "./style.scss";
 
     const footer = () =>{
         const footer_container = document.createElement('footer');
-
         footer_container.textContent = "Copyright stuff"
 
         document.body.appendChild(footer_container);
