@@ -1,8 +1,8 @@
-import welcome from "./welcome";
-import menu from "./menu";
-import contact from "./contact";
-import './style.css';
-import "./style.scss";
+import welcome from "./js/welcome";
+import menu from "./js/menu";
+import contact from "./js/contact";
+import './style/style.css';
+import "./style/style.scss";
 
 (function unChange(){
 
@@ -63,17 +63,14 @@ import "./style.scss";
             if(e.target.getAttribute('class') == 'btnWelcome'){
                 main_container.removeChild(main_container.firstChild);
                 main_container.appendChild(welcome());
-                //document.body.appendChild(main_container);   
                 console.log('1');
             }else if(e.target.getAttribute('class') == 'btnMenu'){
                 main_container.removeChild(main_container.firstChild);
                 main_container.appendChild(menu());
-                //document.body.appendChild(main_container);   
                 console.log('menu');
             }else if(e.target.getAttribute('class') == 'btnContact'){
                 main_container.removeChild(main_container.firstChild);
                 main_container.appendChild(contact());
-                //document.body.appendChild(main_container);   
                 console.log('c');
             }
         });
