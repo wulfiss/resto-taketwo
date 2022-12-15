@@ -17,8 +17,8 @@ const menu = () => {
         food_img.classList.add('menuImg');
 
         name_food.textContent = food[i]['name'];
-        description_food.textContent = food[i]['ingredients'];
-        price_food.textContent = food[i]['price'];
+        description_food.innerHTML =  '<strong>Ingredients: </strong>' + food[i]['ingredients'];
+        price_food.innerHTML = '<strong>Price:</strong> $' + food[i]['price'];
 
         menu_div.appendChild(food_img);
         menu_div.appendChild(name_food);
