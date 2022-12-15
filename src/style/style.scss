@@ -131,7 +131,10 @@ div.menu{
 }
 
 div.menuList{
-
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    
     h1{
         font-family: 'commissioner-semibold';
         font-size: 21px;
@@ -148,7 +151,8 @@ div.menuList{
 
 img.menuImg{
     height: 200px;
-    width: auto;
+    width: 200px;
+    align-self: center;
 }
 
 
