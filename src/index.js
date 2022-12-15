@@ -2,6 +2,7 @@ import './style/style.scss';
 import welcome from "./js/welcome";
 import menu from "./js/menu";
 import contact from "./js/contact";
+
 (function unChange(){
 
     console.log('0');
@@ -42,8 +43,9 @@ import contact from "./js/contact";
 
     const main = () =>{
         const main_container = document.createElement('main');
-        //const content_container = document.createElement('div');
-        main_container.appendChild(welcome());
+        //main_container.appendChild(welcome());
+        main_container.appendChild(menu());
+
         document.body.appendChild(main_container);        
     }
 
