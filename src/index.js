@@ -1,11 +1,10 @@
+import './style/style.scss';
 import welcome from "./js/welcome";
 import menu from "./js/menu";
 import contact from "./js/contact";
-import './style/style.css';
-import "./style/style.scss";
-
 (function unChange(){
 
+    console.log('0');
     const header = () => {
         const header_container = document.createElement('header');
         const header_title = document.createElement('h2');

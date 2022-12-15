@@ -3,6 +3,19 @@ $color-800: #ffd25a;
 $color-700: #ffaa51;
 $text-color: #191919;
 
+$commissioner-font-path: "../fonts/";
+
+@font-face {
+    font-family: "commissioner-regular";
+    src: url("#{$commissioner-font-path}/Commissioner-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "commissioner-semibold";
+    src: url("#{$commissioner-font-path}/Commissioner-SemiBold.ttf");
+    font-weight: 600;
+}
 
 *{
     box-sizing: border-box;
@@ -28,16 +41,19 @@ header{
     justify-items: center;
     align-content: center;
     background-color: $color-700;
+    font-family: 'commissioner-semibold';
 
     h2{
         height: 60px;
+        font-family:'commissioner-semibold';
         font-size: 30px;
         padding: 10px;
     }
     
-    p{
+    p{  
+        font-family: 'commissioner-regular';
         height: 30px;
-        font-size: 18px;
+        font-size: 24px;
         padding: 5px;
     }
 }
@@ -53,6 +69,7 @@ nav{
     background-color: $color-900;
 
     button{
+        font-family: 'commissioner-semibold';
         height: 27px;
         border: none;
         border-radius: 10px;
@@ -76,6 +93,7 @@ div.welcome{
     }
 
     p{
+        font-family: 'commissioner-semibold';
         text-align: center;
         width: 70%;
         font-size: 20px;
@@ -89,7 +107,7 @@ footer{
     display: grid;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    font-family: 'commissioner-semibold';
 }
 
 
@@ -112,6 +130,29 @@ div.menu{
         grid-template-columns: 1fr;
     }
 
+    body{
+        grid-template-rows: 80px 35px auto 30px;
+    }
+
+    header{
+        height: 70px;
+        padding: 7px;
+    
+        h2{
+            height: 40px;
+            font-family:'commissioner-semibold';
+            font-size: 28px;
+            padding: 10px;
+        }
+        
+        p{  
+            font-family: 'commissioner-regular';
+            height: 20px;
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+
     div.welcome{
         grid-template-rows: 1fr 1fr;
         justify-content: center;   
@@ -125,8 +166,9 @@ div.menu{
     
         p{
             text-align: center;
-            width:80%;
-            font-size: 20px;
+            width: 80%;
+            font-size: 16px;
+            padding: 5px;
         }
     }
 
