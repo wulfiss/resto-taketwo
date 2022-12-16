@@ -134,7 +134,7 @@ div.menuList{
     max-width: 250px;
     display: flex;
     flex-direction: column;
-    
+
     h1{
         font-family: 'commissioner-semibold';
         font-size: 21px;
@@ -146,14 +146,49 @@ div.menuList{
         font-size: 16px;
         margin: 3px;
     }
+
+    img.menuImg{
+        height: 200px;
+        width: 200px;
+        align-self: center;
+    }
     
 }
 
-img.menuImg{
-    height: 200px;
-    width: 200px;
-    align-self: center;
+div.contactDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 20px;
+    height: 350px;
+
+    div{
+        height: 60px;
+    }
+
+    .title{
+        font-family: 'commissioner-semibold';
+    }
+
+    .text{
+        font-family: 'commissioner-regular';
+    }
+
+    .superDiv{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .superTitle{
+        font-family: 'commissioner-semibold';
+        font-size: 28px;
+        padding: auto;
+        height: 30px;
+    }
 }
+
 
 
 

@@ -43,9 +43,7 @@ import contact from "./js/contact";
 
     const main = () =>{
         const main_container = document.createElement('main');
-        //main_container.appendChild(welcome());
-        main_container.appendChild(menu());
-
+        main_container.appendChild(welcome());
         document.body.appendChild(main_container);        
     }
 
