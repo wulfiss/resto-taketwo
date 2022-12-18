@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
+
 module.exports = {
     entry: './src/index.js',
     //entry: './src/style/style.scss',
@@ -9,8 +10,13 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: '[name][ext]',
     },
-    mode: 'development',
-    devtool: 'inline-source-map',
+    mode: 'production',
+    //devtool: 'inline-source-map',
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
     module: {
         rules: [
             {
@@ -24,6 +30,14 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+                use: [{
+                loader:'image-webpack-loader',
+                options:{
+                    pngquant:{
+                        quality:[.80, .85],
+                    },
+                },
+            }],
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -36,6 +50,7 @@ module.exports = {
             patterns: [
                 {from: 'src/img', to: 'img'},
             ]
-        })
-    ]
+        }),
+    ],
+
 };
